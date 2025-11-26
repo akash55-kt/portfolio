@@ -100,10 +100,12 @@ header {
 }
 
 .profile {
-    height: 21rem;
-    width: 16rem;
+    /* larger, slightly more square box so the profile image shows better */
+    width: 20rem;
+    height: 24rem;
     background-image: url(./pictures/profile.jpg);
-    background-size: cover;
+    background-size: cover;         /* fill while keeping aspect */
+    background-position: center;    /* ensure important face/subject is centered */
     background-repeat: no-repeat;
     box-shadow: 0 0 2rem #4a4a4a;
     border-radius: 1rem;
@@ -170,8 +172,9 @@ header {
     }
 
     .profile {
-        width: 12rem;
-        height: 16rem;
+        /* make mobile box larger so the picture remains visible */
+        width: 16rem;
+        height: 20rem;
         margin: 0;
     }
 
@@ -188,8 +191,8 @@ header {
 
 @media (max-width: 480px) {
     .profile {
-        width: 10rem;
-        height: 14rem;
+        width: 12rem;
+        height: 16rem;
     }
 
     #name {
