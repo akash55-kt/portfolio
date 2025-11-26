@@ -10,6 +10,7 @@ body {
     background-image: url(./pictures/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #181817;
 }
 
 /*header*/
@@ -35,13 +36,14 @@ header {
     color: #eee;
     cursor: pointer;
     box-shadow: 0 0 1rem 0.01rem #4a4a4a;
-    
+    transition: 0.1s ease-in;
+
 }
 
 
-/* Glow effect */
 .btn:hover {
-  background: #363636;
+    background: #363636;
+    transform: translateY(0.2rem);
 }
 
 .btn:active {
@@ -55,6 +57,7 @@ header {
 }
 
 .link {
+    display: inline-block;
     margin-left: 1rem;
     text-decoration: none;
     color: #eee;
@@ -62,24 +65,26 @@ header {
     padding: 0.6rem;
     border-radius: 50%;
     box-shadow: 0 0 1rem 0.01rem #656565;
-    
+    transition: 0.1s ease-in;
 }
 
 .link:hover {
     background-color: #363636;
+    transform: translateY(0.2rem);
 }
 
 .link:active {
     opacity: 50%;
 }
+
 /*content*/
 
 .content {
     display: flex;
-    align-items:last baseline;
+    align-items: last baseline;
     margin-top: 8rem;
     padding: 1rem;
-    animation: slideFromTop 0.8s ease-out forwards;
+    animation: slideFromTop 1s ease-out forwards;
 }
 
 @keyframes slideFromTop {
@@ -87,6 +92,7 @@ header {
         opacity: 0;
         transform: translateY(-25rem);
     }
+
     100% {
         opacity: 100%;
         transform: translateY(0);
@@ -110,6 +116,7 @@ header {
         position: absolute;
         top: 0;
     }
+
     to {
         position: relative;
 
@@ -119,10 +126,73 @@ header {
 .intro {
     font-size: 2rem;
     color: #76b2b6;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0 0 1.5rem 2rem;
 }
 
 #name {
     font-size: 5rem;
+}
+
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.7rem;
+        margin: 0;
+    }
+
+    .links {
+        margin: 0;
+        display: flex;
+        gap: 0.8rem;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+        text-align: center;
+    }
+
+    .profile {
+        width: 12rem;
+        height: 16rem;
+        margin: 0;
+    }
+
+    .intro {
+        margin: 1rem 0;
+        font-size: 1.2rem;
+    }
+
+    #name {
+        font-size: 2.8rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .profile {
+        width: 10rem;
+        height: 14rem;
+    }
+
+    #name {
+        font-size: 2.2rem;
+    }
 }
