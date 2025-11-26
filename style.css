@@ -7,8 +7,8 @@
 body {
     height: 100vh;
     width: 100vw;
-    background-image: url(./pictures/background.jpg);
-    background-repeat: no-repeat;
+    background-image: url(https://www.shutterstock.com/image-vector/abstract-modern-design-black-background-600nw-2516352137.jpg);
+    background-repeat:repeat y;
     background-size: cover;
     background-color: #181817;
 }
@@ -51,7 +51,7 @@ header {
 }
 
 .links {
-    margin-top: 1rem;
+    margin-top: 0.2rem;
     padding: 0.5rem;
     margin-right: 0.5rem;
 }
@@ -102,7 +102,7 @@ header {
 .profile {
     height: 21rem;
     width: 16rem;
-    background-image: url(./pictures/profile.png);
+    background-image: url(./pictures/profile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0 0 2rem #4a4a4a;
