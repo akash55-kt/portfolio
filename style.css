@@ -100,12 +100,11 @@ header {
 }
 
 .profile {
-    /* larger, slightly more square box so the profile image shows better */
     width: 20rem;
     height: 24rem;
     background-image: url(./pictures/profile.jpg);
-    background-size: cover;         /* fill while keeping aspect */
-    background-position: center;    /* ensure important face/subject is centered */
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     box-shadow: 0 0 2rem #4a4a4a;
     border-radius: 1rem;
