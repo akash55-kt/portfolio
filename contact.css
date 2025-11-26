@@ -88,6 +88,11 @@ button:active {
   margin-top: 10px;
 }
 
+.link1 {
+  text-decoration: none;
+  color: #eee;
+}
+
 @media (max-width: 768px) {
 
   #contact {
