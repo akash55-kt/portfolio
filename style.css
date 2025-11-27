@@ -171,8 +171,7 @@ header {
     }
 
     .profile {
-        /* make mobile box larger so the picture remains visible */
-        width: 16rem;
+        width: auto;
         height: 20rem;
         margin: 0;
     }
