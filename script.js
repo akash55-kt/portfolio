@@ -1,4 +1,20 @@
 buttons = document.querySelectorAll(".btn");
+btn = document.querySelector(".buttons");
+menuIcon = document.querySelector(".menu-icon");
+
+//responsive
+menuIcon.addEventListener("click", () => {
+    if (menuIcon.innerText === "☰") {
+        btn.classList.toggle("active");
+        buttons.forEach(b => b.classList.toggle("btns"));
+        menuIcon.innerText = "✖";
+    } else {
+        btn.classList.toggle("active");
+        buttons.forEach(b => b.classList.toggle("btns"));
+        menuIcon.innerText = "☰";
+    }
+});
+
 
 buttons.forEach((btn) => {
     if (btn.innerText === 'HOME') {
