@@ -1,0 +1,55 @@
+body {
+  padding-top: 3.5rem;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #e1e1e1;
+}
+
+body.dark-mode .text-body-emphasis {
+    color: #ffffff !important;
+}
+
+body.dark-mode .card,
+body.dark-mode .list-group-item {
+  background-color: #1f1f1f;
+  color: #e1e1e1;
+}
+
+body.dark-mode .text {
+    color: #e1e1e1;
+}
+
+body.dark-mode .list-group-item {
+    color: #e1e1e1;
+}
+
+body.dark-mode .form-control,
+body.dark-mode textarea {
+  background-color: #1f1f1f;
+  color: #fff;
+  border-color: #444;
+}
+
+body.dark-mode .btn-outline-secondary {
+  color: #ddd;
+  border-color: #666;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding-top: 3.5rem;
+  margin-top: -3.5rem;
+}
+
+#profile {
+  height: 5rem;
+}
+
+.btn.active {
+  color: #fff;
+}

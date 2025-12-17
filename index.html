@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./pictures/portfolio-icon-in-black-color-vector.jpg">
+</head>
+
+<body>
+
+    <!--navbar-->
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span
+                    class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 btn-group" role="group">
+                    <li class="nav-item"> <button data-target="home" type="button" class="nav-btn btn active"
+                            style="--bs-btn-color: #6C757D; --bs-btn-hover-color: #e1e1e1;">Home</button> </li>
+                    <li class="nav-item"> <button data-target="about" type="button" class="nav-btn btn"
+                            style="--bs-btn-color: #6C757D; --bs-btn-hover-color: #e1e1e1;">About</button> </li>
+                    <li class="nav-item"> <button data-target="work" type="button" class="nav-btn btn"
+                            style="--bs-btn-color: #6C757D; --bs-btn-hover-color: #e1e1e1;">Work</button> </li>
+                    <li class="nav-item"> <button data-target="contact" type="button" class="nav-btn btn"
+                            style="--bs-btn-color: #6C757D; --bs-btn-hover-color: #e1e1e1;">Contact</button> </li>
+                </ul>
+                <div class="navbar-nav d-flex flex-row">
+                    <li class="nav-item"> <a class="nav-link" href="https://www.linkedin.com/in/akash-sahu-b8a990371/"
+                            target="_blank"><i class="fa-brands fa-linkedin"></i></a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="https://wa.me/7788952177" target="_blank"><i
+                                class="fa-brands fa-whatsapp"></i></a> </li>
+                </div>
+
+                <!-- Theme Toggle Button -->
+                <li class="nav-item ms-2 d-none d-md-block">
+                    <button id="themeToggleDesktop" class="btn btn-outline-secondary">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </li>
+
+            </div>
+
+            <!-- Theme Toggle Button on mobile -->
+            <button id="themeToggleMobile" class="btn btn-outline-secondary position-fixed top-0 end-0 m-2 mx-4 d-md-none">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+
+        </div>
+    </nav>
+
+    <main>
+        <!--home-->
+        <section id="home" class="page active d-flex justify-content-sm-center">
+            <div class="px-4 text-center d-flex row">
+                <h1 class=" display-5 fw-bold text-body-emphasis text">Akash Sahu</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4">Designing pixel-perfect, accessible interfaces — I build delightful web
+                        experiences with HTML, CSS & JavaScript.</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <button data-target="work" type="button"
+                            class="btn-links btn btn-outline-secondary btn-lg px-4 gap-3">View my work</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--About-->
+        <section id="about" class="pb-4">
+            <div class="container">
+                <div class="row d-flex justify-content-sm-center align-items-center">
+
+                    <div class="col-md-7">
+                        <h2 class="fw-bold mb-3">About Me</h2>
+                        <p class="text">
+                            Hi, I’m <strong>Akash</strong>, a passionate Frontend Web Developer
+                            with a background in BCA. I enjoy building responsive, user-friendly
+                            web interfaces using modern technologies.
+                        </p>
+
+                        <p class="text">
+                            My focus is on clean design, smooth user experience, and writing
+                            maintainable code. I’m actively preparing for frontend developer
+                            roles and continuously improving my skills.
+                        </p>
+
+                        <ul class="list-group list-group-flush mb-3">
+                            <li class="list-group-item px-0">
+                                <strong>Degree:</strong> BCA
+                            </li>
+                            <li class="list-group-item px-0">
+                                <strong>Skills:</strong> HTML, CSS, JavaScript, Bootstrap, git & GitHub, C++, DSA
+                            </li>
+                            <li class="list-group-item px-0">
+                                <strong>Role:</strong> Frontend Developer
+                            </li>
+                        </ul>
+
+                        <button data-target="contact" class="btn-links btn btn-outline-secondary rounded-pill px-4">
+                            Contact Me
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--work-->
+        <section id="work" class="pb-4 column">
+            <div class="container">
+                <h1 class="text-center mb-5">My Projects</h1>
+                <div class="row g-4">
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="card-title h5">Currency Converter</h2>
+                                <p class="card-text">A web app that converts currencies in real time by API using
+                                    JavaScript.</p>
+                                <a href="https://akash55-kt.github.io/currency-convertor/" target="_blank"
+                                    class="btn btn-outline-secondary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="card-title h5">To-Do App</h2>
+                                <p class="card-text">An interactive todo list application made with pure JavaScript.</p>
+                                <a href="https://akash55-kt.github.io/Task-List/" target="_blank"
+                                    class="btn btn-outline-secondary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="card-title h5">Calculator</h2>
+                                <p class="card-text">A simple and responsive calculator built using HTML, CSS, and
+                                    JavaScript.</p>
+                                <a href="https://akash55-kt.github.io/calculator/" target="_blank"
+                                    class="btn btn-outline-secondary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="card-title h5">Tic Tac Toe</h2>
+                                <p class="card-text">A classic game built using HTML, CSS, and JavaScript with win-check
+                                    logic.</p>
+                                <a href="https://akash55-kt.github.io/Tic-Tac-Toe/" target="_blank"
+                                    class="btn btn-outline-secondary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="card-title h5">Rock Paper Scissors</h2>
+                                <p class="card-text">A fun game where you can play against the computer using JavaScript
+                                    logic.</p>
+                                <a href="https://akash55-kt.github.io/Rock-Paper-Scissors/" target="_blank"
+                                    class="btn btn-outline-secondary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="card-title h5">Digital Clock</h2>
+                                <p class="card-text">A simple and responsive web-based digital clock built using HTML,
+                                    CSS,
+                                    and JavaScript.</p>
+                                <a href="https://akash55-kt.github.io/Digital-Clock" target="_blank"
+                                    class="btn btn-outline-secondary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--contact-->
+        <section id="contact" class="pb-4">
+            <div class="container py-5">
+                <h1 class="text-center mb-5">Contact Me</h1>
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-6">
+                        <form id="form">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-outline-secondary btn-lg">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+
+
+                        <div class="mt-4 text-center">
+                            <p>Or reach me via:</p>
+                            <a href="mailto:sahuakash5751@gmail.com" class="btn btn-outline-secondary me-2">Email</a>
+                            <a href="https://www.linkedin.com/in/akash-sahu-b8a990371/" target="_blank"
+                                class="btn btn-outline-secondary me-2">LinkedIn</a>
+                            <a href="https://github.com/akash55-kt" target="_blank"
+                                class="btn btn-outline-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--footer-->
+        <footer class="bg-dark text-light pt-5">
+            <div class="container">
+                <div class="row text-center text-md-start">
+
+                    <!-- About -->
+                    <div class="col-md-4 mb-4">
+                        <h5 class="fw-bold">Akash Sahu</h5>
+                        <p>
+                            Web Developer passionate about creating responsive and user-friendly websites.
+                        </p>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-md-4 mb-4">
+                        <h5 class="fw-bold">Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><button data-target="home" class="btn p-0 btn-links"
+                                    style="--bs-btn-color: #F8F9FA; --bs-btn-hover-color: #686868;">Home</button></li>
+                            <li><button data-target="about" class="btn p-0 btn-links"
+                                    style="--bs-btn-color: #F8F9FA; --bs-btn-hover-color: #686686;">About</button></li>
+                            <li><button data-target="work" class="btn p-0 btn-links"
+                                    style="--bs-btn-color: #F8F9FA; --bs-btn-hover-color: #686686;">Projects</button>
+                            </li>
+                            <li><button data-target="contact" class="btn p-0 btn-links"
+                                    style="--bs-btn-color: #F8F9FA; --bs-btn-hover-color: #686686;">Contact</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="col-md-4 mb-4">
+                        <h5 class="fw-bold">Connect with Me</h5>
+                        <a href="https://www.github.com/akash55-kt" target="_blank" class="text-light me-3 fs-4"><i
+                                class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/akash-sahu-b8a990371/" target="_blank"
+                            class="text-light me-3 fs-4"><i class="bi bi-linkedin"></i></a>
+                        <a href="sahuakash7571@gmail.com" target="_blank" class="text-light fs-4"><i
+                                class="bi bi-envelope"></i></a>
+                    </div>
+
+                </div>
+
+                <hr class="border-secondary">
+
+                <!-- Copyright -->
+                <div class="text-center pb-3">
+                    <small>© 2025 Akash Sahu</small>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap Icons CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
