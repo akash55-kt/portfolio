@@ -1,5 +1,5 @@
 const toggleButtons = document.querySelectorAll(
-    "#themeToggle, #themeToggleDesktop"
+    "#themeToggleMobile, #themeToggleDesktop"
 );
 const body = document.body;
 body.classList.remove("dark-mode");
