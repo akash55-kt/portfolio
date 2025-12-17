@@ -41,9 +41,13 @@ body.dark-mode .btn-outline-secondary {
 section {
   display: flex;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 3.5rem;
   margin-top: -3.5rem;
+}
+
+#home {
+  height: 100vh;
 }
 
 #profile {
