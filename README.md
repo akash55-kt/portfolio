@@ -1,0 +1,1 @@
+Designed a mobile friendly web page using bootstrap components
