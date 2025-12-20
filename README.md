@@ -1,1 +1,1 @@
-Designed a mobile friendly web page using bootstrap components
+Designed a mobile friendly web page using bootstrap components that shows my works and projects
