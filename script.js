@@ -33,8 +33,15 @@ function changeTabonTap(e) {
             block: "start"
         });
     }
-    if(pageTitles[targetID]) {
+    if (pageTitles[targetID]) {
         document.title = pageTitles[targetID];
+    }
+
+    if (navbarCollapse.classList.contains('show')) {
+        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+            toggle: false
+        });
+        bsCollapse.hide();
     }
 }
 
@@ -64,8 +71,18 @@ function changeTabonScroll() {
         activeBtn.classList.add("active");
     }
 
-    if(pageTitles[currentSection]) {
+    if (pageTitles[currentSection]) {
         document.title = pageTitles[currentSection];
+    }
+}
+
+function changeTabOnLoad () {
+    const targetSection = document.querySelector(`#home`);
+    if (targetSection) {
+        targetSection.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
     }
 }
 
@@ -77,6 +94,7 @@ btns.forEach(btn => {
 });
 
 window.addEventListener("scroll", changeTabonScroll);
+window.addEventListener("load", changeTabOnLoad);
 
 btn_links.forEach(link => {
     link.addEventListener("click", changeTabonTap);
@@ -99,7 +117,7 @@ form.addEventListener("submit", (e) => {
     alert("form submitted");
 
     window.open(url, "_blank");
-    
+
     inputs.forEach(input => input.value = "");
 });
 
